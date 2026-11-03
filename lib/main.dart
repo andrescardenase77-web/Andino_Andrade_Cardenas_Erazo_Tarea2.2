@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'tema.dart';
 import 'views/pantallas/pantalla_splash.dart';
 // Importaciones de las pantallas de los companeros (descomentar al integrarlas):
-// import 'views/pantallas/pantalla_productos.dart';
+// import 'views/pantallas/pantalla_galeria.dart';
 // import 'views/pantallas/pantalla_detalle.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MiAplicacion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Catálogo de Productos',
+      title: 'Galería de Fotografías',
       debugShowCheckedModeBanner: false,
       // Aplicacion del tema global reutilizable
       theme: temaAplicacion,
@@ -25,7 +25,7 @@ class MiAplicacion extends StatelessWidget {
       routes: {
         '/': (context) => const PantallaSplash(),
         // Rutas que seran implementadas por los demas integrantes del equipo:
-        // '/productos': (context) => const PantallaProductos(),
+        // '/galeria': (context) => const PantallaGaleria(),
         // '/detalle': (context) => const PantallaDetalle(),
       },
     );

@@ -39,7 +39,7 @@ final ThemeData temaAplicacion = ThemeData(
     centerTitle: true,
   ),
 
-  // Configuracion de tarjetas para el catalogo de productos
+  // Configuracion de tarjetas para las fotografias de la galeria
   cardTheme: CardThemeData(
     color: Colors.white,
     elevation: 3,

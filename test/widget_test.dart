@@ -8,9 +8,9 @@ void main() {
     // Construir la aplicacion y disparar un frame
     await probador.pumpWidget(const MiAplicacion());
 
-    // Verificar que el titulo y los iconos de la tienda estan presentes
-    expect(find.text('Catálogo de Productos'), findsOneWidget);
-    expect(find.byIcon(Icons.shopping_bag_rounded), findsOneWidget);
+    // Verificar que el titulo y los iconos de la galeria estan presentes
+    expect(find.text('Galería de Fotografías'), findsOneWidget);
+    expect(find.byIcon(Icons.photo_library_rounded), findsOneWidget);
     expect(find.byIcon(Icons.arrow_forward_rounded), findsOneWidget);
   });
 }

@@ -55,13 +55,13 @@ class _EstadoPantallaSplash extends State<PantallaSplash>
   void avanzarSiguientePantalla() {
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
-        content: Text('Navegando a la pantalla de productos...'),
+        content: Text('Navegando a la galería de fotografías...'),
         duration: Duration(seconds: 2),
       ),
     );
 
     try {
-      Navigator.pushReplacementNamed(context, '/productos');
+      Navigator.pushReplacementNamed(context, '/galeria');
     } catch (_) {
       // Manejo seguro en caso de que la ruta aun no este activa en main.dart
     }
@@ -88,18 +88,18 @@ class _EstadoPantallaSplash extends State<PantallaSplash>
                       opacity: animacionOpacidad,
                       child: Column(
                         children: [
-                          // Uso del widget base ContenedorIcono
+                          // Uso del widget base ContenedorIcono con icono de galeria
                           const ContenedorIcono(
-                            icono: Icons.shopping_bag_rounded,
+                            icono: Icons.photo_library_rounded,
                             tamanoIcono: 70,
                             tamanoContenedor: 130,
                             colorIcono: colorAzulPrimario,
                           ),
                           const SizedBox(height: 28),
 
-                          // Nombre de la tienda
+                          // Nombre de la galeria
                           const Text(
-                            'Catálogo de Productos',
+                            'Galería de Fotografías',
                             style: TextStyle(
                               fontSize: 26,
                               fontWeight: FontWeight.bold,
@@ -110,9 +110,9 @@ class _EstadoPantallaSplash extends State<PantallaSplash>
                           ),
                           const SizedBox(height: 10),
 
-                          // Subtitulo de la tienda
+                          // Subtitulo de la aplicacion
                           const Text(
-                            'Tu tienda virtual favorita',
+                            'Tus mejores momentos en un solo lugar',
                             style: TextStyle(
                               fontSize: 16,
                               color: colorAzulMedio,
