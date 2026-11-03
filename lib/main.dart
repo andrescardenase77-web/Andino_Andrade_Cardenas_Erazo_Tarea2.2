@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
-import 'tema.dart';
-import 'views/pantallas/pantalla_splash.dart';
 import 'package:provider/provider.dart';
+import 'tema.dart';
 import 'viewmodels/galeria_viewmodel.dart';
+import 'views/pantallas/pantalla_splash.dart';
 import 'views/pantallas/pantalla_galeria.dart';
 // Importaciones de las pantallas de los companeros (descomentar al integrarlas):
-// import 'views/pantallas/pantalla_galeria.dart';
 // import 'views/pantallas/pantalla_detalle.dart';
 
 void main() {
   runApp(
-  ChangeNotifierProvider(
-    create: (_) => GaleriaViewModel(),
-    child: const MiAplicacion(),
-  ),
+    ChangeNotifierProvider(
+      create: (_) => GaleriaViewModel(),
+      child: const MiAplicacion(),
+    ),
   );
-
 }
 
 class MiAplicacion extends StatelessWidget {
@@ -28,18 +26,15 @@ class MiAplicacion extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // Aplicacion del tema global reutilizable
       theme: temaAplicacion,
-      // Ruta inicial de la aplicacion
-      initialRoute: '/galeria',
+      // Ruta inicial de la aplicacion (inicia en la pantalla Splash)
+      initialRoute: '/',
       // Definicion de rutas nombradas
       routes: {
         '/': (context) => const PantallaSplash(),
         '/galeria': (context) => const PantallaGaleria(),
         // Rutas que seran implementadas por los demas integrantes del equipo:
-        // '/galeria': (context) => const PantallaGaleria(),
         // '/detalle': (context) => const PantallaDetalle(),
       },
     );
   }
 }
-
-
