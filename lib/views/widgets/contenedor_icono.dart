@@ -28,7 +28,7 @@ class ContenedorIcono extends StatelessWidget {
         shape: BoxShape.circle,
         boxShadow: [
           BoxShadow(
-            color: colorAzulPrimario.withOpacity(0.25),
+            color: colorAzulPrimario.withValues(alpha: 0.25),
             blurRadius: 20,
             offset: const Offset(0, 8),
           ),

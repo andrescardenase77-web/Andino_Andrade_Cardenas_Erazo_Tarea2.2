@@ -25,7 +25,7 @@ class BotonFlecha extends StatelessWidget {
         shape: BoxShape.circle,
         boxShadow: [
           BoxShadow(
-            color: colorBoton.withOpacity(0.3),
+            color: colorBoton.withValues(alpha: 0.3),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),

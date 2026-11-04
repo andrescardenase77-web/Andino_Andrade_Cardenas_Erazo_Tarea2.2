@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import '../../tema.dart';
 import '../../viewmodels/galeria_viewmodel.dart';
 import '../widgets/fondo_degradado.dart';
+import 'package:provider/provider.dart';
 
 class PantallaGaleria extends StatelessWidget {
   const PantallaGaleria({super.key});
@@ -60,7 +60,7 @@ class PantallaGaleria extends StatelessWidget {
                       left: 0,
                       right: 0,
                       child: Container(
-                        color: colorAzulOscuro.withOpacity(0.75),
+                        color: colorAzulOscuro.withValues(alpha: 0.75),
                         padding: const EdgeInsets.all(8),
                         child: Text(
                           foto.titulo,

@@ -4,8 +4,7 @@ import 'tema.dart';
 import 'viewmodels/galeria_viewmodel.dart';
 import 'views/pantallas/pantalla_splash.dart';
 import 'views/pantallas/pantalla_galeria.dart';
-// Importaciones de las pantallas de los companeros (descomentar al integrarlas):
-// import 'views/pantallas/pantalla_detalle.dart';
+import 'views/pantallas/pantalla_detalle.dart';
 
 void main() {
   runApp(
@@ -32,8 +31,7 @@ class MiAplicacion extends StatelessWidget {
       routes: {
         '/': (context) => const PantallaSplash(),
         '/galeria': (context) => const PantallaGaleria(),
-        // Rutas que seran implementadas por los demas integrantes del equipo:
-        // '/detalle': (context) => const PantallaDetalle(),
+        '/detalle': (context) => const PantallaDetalle(),
       },
     );
   }
